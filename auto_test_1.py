@@ -11,14 +11,14 @@ time.sleep(5)
 
 elem = driver.find_element_by_name("login_username")
 elem.clear()
-elem.send_keys("dawid.pytlinski.1991@wp.pl")
+elem.send_keys()
 time.sleep(5)
 elem = driver.find_element_by_name("password")
 elem.clear()
-elem.send_keys("pytla1991")
+elem.send_keys()
 elem = driver.find_element_by_xpath ('//*[@id="btnSubmit"]') .click()
 
-assert  "@wp (1366) Odebrane - WP Poczta" not in driver.page_source
+assert  "@wp () Odebrane - WP Poczta" not in driver.page_source
 
 time.sleep(5)
 
